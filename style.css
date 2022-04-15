@@ -37,16 +37,20 @@ main>* {
     color: #fff;
 }
 
-main h1 {
+/* FIRST SECTION STYLING STARTS*/
+main section:nth-child(1) h1 {
     margin-bottom: 1.3rem;
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
 }
 
-main p {
+main section:nth-child(1) p {
     opacity: 0.8;
 }
 
+/* FIRST SECTION STYLING ENDS*/
+
+/*SECOND SECTION STYLING STARTS*/
 main section:nth-child(2)>button {
     color: #F6FAFE;
     background-color: var(--Purple);
@@ -62,6 +66,7 @@ main section:nth-child(2)>*:not(:first-child) {
     height: 60vh;
 }
 
+/*FORM STYLING STARTS*/
 section form>*:not(p) {
     width: 83%;
     margin: 0.5rem;
@@ -111,4 +116,6 @@ section form a {
     font-weight: 800;
 }
 
+/*FORM STYLING ENDS*/
+/*SECOND SECTION STYLING ENDS*/
 /*MAIN STYLE ENDS*/
