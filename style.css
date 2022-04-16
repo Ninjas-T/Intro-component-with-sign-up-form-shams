@@ -140,6 +140,11 @@ form a {
 
 /*Medium screen tablet*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     section {
         width: 45%;
@@ -153,6 +158,12 @@ form a {
 
 /*Large screen laptop*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     section {
         width: 38%;
         margin: auto;
@@ -165,27 +176,33 @@ form a {
 
 /*X large screen*/
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     section:nth-child(1) {
         width: 32%;
         margin: auto;
     }
 
-    section:nth-child(1) h1{
+    section:nth-child(1) h1 {
         font-size: 2.8rem;
     }
 
-    section:nth-child(1) p{
+    section:nth-child(1) p {
         font-size: 0.82rem;
     }
 
-    section:nth-child(2){
+    section:nth-child(2) {
         width: 40%;
         margin: auto;
     }
 
-    form input, p {
+    form input,
+    p {
         font-size: 0.8rem;
     }
 
 }
-
