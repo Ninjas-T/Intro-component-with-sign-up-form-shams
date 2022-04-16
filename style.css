@@ -40,37 +40,50 @@ main>* {
     color: #fff;
 }
 
-/* FIRST SECTION STYLING STARTS*/
-main section:nth-child(1) h1 {
-    margin-bottom: 1.3rem;
-    font-size: 1.7rem;
-    letter-spacing: 0.1rem;
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-main section:nth-child(1) p {
+/* FIRST SECTION STYLING STARTS*/
+
+section:nth-child(1) h1 {
+    margin-bottom: 1.3rem;
+    font-size: 1.7rem;
+}
+
+section:nth-child(1) p {
     opacity: 0.8;
 }
 
 /* FIRST SECTION STYLING ENDS*/
 
 /*SECOND SECTION STYLING STARTS*/
-main section:nth-child(2)>button {
+section:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     color: #F6FAFE;
     background-color: var(--Purple);
     padding: 1.5rem 2rem;
-    margin: 1rem 0;
+    margin: 4rem 0 2rem 0;
     border: none;
     border-radius: 8px;
     box-shadow: 2px 6px 10px hsla(257, 60%, 14%, 0.7);
-    cursor: pointer;
 }
 
-main section:nth-child(2)>*:not(:first-child) {
-    height: 65vh;
+section:nth-child(2) div p {
+    width: 80%;
+}
+
+section:nth-child(2)>*:not(:first-child) {
+    height: 67vh;
 }
 
 /*FORM STYLING STARTS*/
-section form>*:not(p) {
+form>*:not(p) {
     width: 83%;
     margin: 0.5rem;
     padding: 1rem;
@@ -79,23 +92,23 @@ section form>*:not(p) {
     outline: 1px solid var(--Grayish-Blue);
 }
 
-section form {
+form {
     border-radius: 8px;
     box-shadow: 2px 5px 6px hsla(257, 60%, 14%, .7);
     background-color: hsl(0, 0%, 100%);
 }
 
-section form input:nth-child(1) {
+form input:nth-child(1) {
     margin-top: 1.5rem;
 }
 
-section form input::placeholder {
+form input::placeholder {
     color: hsla(249, 10%, 20%, .6);
     font-size: 1rem;
     font-weight: 800;
 }
 
-section form button {
+form button {
     color: #F6FAFE;
     background-color: var(--Green);
     text-transform: uppercase;
@@ -106,14 +119,14 @@ section form button {
     cursor: pointer;
 }
 
-section form p {
+form p {
     color: var(--Grayish-Blue);
     text-align: center;
     font-size: 0.7rem;
     padding: 0.5rem 1.7rem;
 }
 
-section form a {
+form a {
     color: var(--Red);
     text-decoration: none;
     font-weight: 800;
@@ -122,3 +135,57 @@ section form a {
 /*FORM STYLING ENDS*/
 /*SECOND SECTION STYLING ENDS*/
 /*MAIN STYLE ENDS*/
+
+/*MEDIA QUERIES*/
+
+/*Medium screen tablet*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    section {
+        width: 45%;
+        margin: auto;
+    }
+
+    section:nth-child(1) h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/*Large screen laptop*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    section {
+        width: 38%;
+        margin: auto;
+    }
+
+    section:nth-child(1) h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/*X large screen*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    section:nth-child(1) {
+        width: 32%;
+        margin: auto;
+    }
+
+    section:nth-child(1) h1{
+        font-size: 2.8rem;
+    }
+
+    section:nth-child(1) p{
+        font-size: 0.82rem;
+    }
+
+    section:nth-child(2){
+        width: 40%;
+        margin: auto;
+    }
+
+    form input, p {
+        font-size: 0.8rem;
+    }
+
+}
+
